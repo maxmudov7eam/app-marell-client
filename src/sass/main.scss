@@ -2396,6 +2396,18 @@ html {
                 }
             }
 
+            .partners-card-content{
+                .cardHeader {
+                    padding: 24px;
+                    img{
+                        object-fit: cover;
+                        height: 206px;
+                        border-radius: 8px;
+
+                    }
+                }
+            }
+
             @media(max-width: 767px) {
                 margin-bottom: 50px;
             }

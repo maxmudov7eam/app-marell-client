@@ -2,7 +2,8 @@ import {UPDATESTATE} from "../type/authType";
 
 const initialState = {
     isLoading: false,
-    me: {}
+    me: {},
+    partners: []
 }
 
 export const authReducer = (state = initialState, action) => {

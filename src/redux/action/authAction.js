@@ -68,3 +68,10 @@ export const register = (e, v) => (dispatch) => {
             dispatch(updateState({isLoading: false}))
         })
 }
+
+export const getPartners = ()=> dispatch => {
+    axios.get(API_PATH + "partner")
+        .then(res => {
+            dispatch(updateState({partners: res.data.data}));
+        })
+}
